@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <!-- INTERNAL-->
+    <script>
+      // User Defined Function
+      function hello() {
+        alert("Hello Using Internal Javascript!!");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Click Me" onclick="hello()" />
+
+    <!-- ERROR - Invalid Function / Method is not defineed -->
+    <input type="button" value="Click Me 2" onclick="helloo()" />
+
+    <!-- ERROR - Onclick expects METHOD -->
+    <input type="button" value="Click Me 3" onclick="hello" />
+  </body>
+</html>
